@@ -123,7 +123,27 @@ body {
   font-size: 1.2rem;
 }
 
-.button-container {
-  display: block;
+.button-container button {
+  margin-top: 2rem;
+  padding: 1rem 5rem .7rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0.7px solid rgba(160, 25, 25, 0.9);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button-container button:hover {
+  background-color: rgba(160, 25, 25, 0.9);
+  border: .7px solid white;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=styles.css.map */

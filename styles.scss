@@ -107,5 +107,27 @@ body {
 }
 
 .button-container {
-    display: block;
+    
+
+    button {
+        margin-top: 2rem;
+        padding: 1rem 5rem .7rem;
+        border-radius: 2rem;
+        box-shadow: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: .7px solid rgba(160, 25, 25, .9);
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        transition: 1s;
+    }
+
+    button:hover {
+        background-color: rgba(160, 25, 25, .9);
+        border: .7px solid white;
+        color: white;
+        transition: 1s;
+    }
+
 }

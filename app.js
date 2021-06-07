@@ -1,5 +1,10 @@
-
-
+document.addEventListener('click', e => {
+    //console.log(e.target)
+    if (e.target.classList.contains('btn')) {
+        const random = getRandom(1,200)
+        fetchData(random)
+    }
+})
 
 document.addEventListener('DOMContentLoaded', () => {
     const random = getRandom(1,200)
@@ -15,7 +20,7 @@ const fetchData = async (id) => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
         const data = await res.json()
 
-        console.log(data)
+        //console.log(data)
 
         const pokemon = {
             img: data.sprites.other.dream_world.front_default,
@@ -41,6 +46,7 @@ const fetchData = async (id) => {
 
 const printCard = pokemon => {
     const flex = document.querySelector('.flex')
+    flex.innerHTML = ''
     const template = document.getElementById('template-card').content
     const clone = template.cloneNode(true)
     const fragment = document.createDocumentFragment()
@@ -59,4 +65,5 @@ const printCard = pokemon => {
     flex.appendChild(fragment)
 
 }
+
 
