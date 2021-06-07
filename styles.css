@@ -35,6 +35,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card {
@@ -44,6 +48,8 @@ body {
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(160, 25, 25, 0.9);
+  text-transform: capitalize;
 }
 
 .card-header {
@@ -66,14 +72,18 @@ body {
 }
 
 .card-body-img {
-  border: 5px solid white;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(160, 25, 25, 0.3);
   border-radius: 50%;
-  margin-top: calc(-48px - -5px);
+  margin-top: calc(-100px - -5px);
+  background-color: white;
 }
 
 .card-body-title {
   margin-top: 2rem;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .card-body-title span {
@@ -83,7 +93,7 @@ body {
 
 .card-body-text {
   color: var(--dark-gray);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -103,11 +113,17 @@ body {
 }
 
 .card-footer-social h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 0;
+  color: #d11616;
 }
 
 .card-footer-social p {
   letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.button-container {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
